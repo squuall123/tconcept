@@ -1,0 +1,5 @@
+Pillow==5.0.0
+PyQt4==4.11.4
+cffi==1.11.4
+pycups==1.9.73
+pyserial==3.4
