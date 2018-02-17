@@ -20,7 +20,8 @@ class userHandler:
         self.logTableName = "log_" + self.configHandler.numTable
 
         try:
-            self.conn = mysql.connector.connect(host=configHandler.mysqlServer, user=configHandler.mysqlUser, password=configHandler.mysqlPass, db=configHandler.mysqlDatabase)
+            #self.conn = mysql.connector.connect(host=configHandler.mysqlServer, user=configHandler.mysqlUser, password=configHandler.mysqlPass, db=configHandler.mysqlDatabase)
+            self.conn = mysql.connector.connect(host="localhost", user="tconcept", password="tconcept", db="tconcept")
             self.cursor = self.conn.cursor()
             # On crée la table de journal de l'utilisateur
             query = "CREATE TABLE IF NOT EXISTS %s (date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, event VARCHAR(1000));" % self.logTableName
