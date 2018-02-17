@@ -1,0 +1,5 @@
+
+QCoreApplication::sendPostedEvents: Cannot send posted events for objects in another thread
+*** Error in `python': double free or corruption (fasttop): 0x01a11658 ***
+Abandon
+

@@ -1,0 +1,30 @@
+Raspberry python Script pour TConcept
+    Par Baptiste Denaeyer le 12-01-2016
+
+Arborescence du dossier et à quoi servent les fichier
+
+.
+├── conf
+│   ├── liste_utilisateur.csv   -> fichier CSV pour test, à remplacer
+│   └── test.conf               -> Fichier de conf pour l'appli
+├── configHandler.py            -> script python qui gère le conf de l'appli
+├── log                         -> Dossier ou les logs sont stockés (configurable dans test.conf)
+├── main.py                     -> script principale
+├── README                      -> ce fichier
+├── ref                         -> Dossier contenant les fichiers de reférence (configurable dans test.conf)
+│   ├── 1.cfg                   -> la configuration pour la référence 1
+│   ├── 1.csv                   -> Le CSV pour la référence 1
+│   └── 1.zpl                   -> Le ticket à imprimer pour la référence 1
+├── refHandler.py               -> Script qui gère le test d'une référence
+├── serialComHandler.py         -> Script qui gère le port série
+├── UI.py                       -> Script qui gère l'interface graphique
+├── userHandler.py              -> Script qui gère l'autorisation des utilisateurs
+
+
+
+execution du script python: python main.py
+
+Le bouton est à connecter sur le GPIO17 (numérotation BCM)
+
+Ref - pour le workflow:
+	https://mensuel.framapad.org/p/0dds2k7tmx
