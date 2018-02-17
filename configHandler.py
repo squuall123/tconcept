@@ -21,8 +21,8 @@ class configHandler:
     numTable = "0"
     mysqlServer = "localhost"
     mysqlDatabase = "tconcept"
-    mysqlUser = "root"
-    mysqlPass = ""
+    mysqlUser = "tconcept"
+    mysqlPass = "tconcept"
 
 
     def __init__(self, filename="conf/defaults.cfg"):
@@ -52,4 +52,3 @@ class configHandler:
             self.mysqlPass = self.config.get('mysql', 'pass')
         except ConfigParser.Error:
             logging.debug('Erreur dans le fichier de config')
-
